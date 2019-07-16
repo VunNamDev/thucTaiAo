@@ -1,0 +1,331 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		#mat sau
+		Transform {
+			translation	-1.5 0 -.05
+			children [
+				
+				Shape {
+
+					geometry Box {
+						size 3 4 .1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .89 .73 .34
+							specularColor .27 .13 .13
+							ambientIntensity .0933
+							shininess .31
+						}
+					}
+				}
+			]
+		}
+		#vach ngan
+		Transform {
+			translation	-1.5 0 1.5
+			children [
+				
+				Shape {
+
+					geometry Box {
+						size 3 4 .1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .89 .73 .34
+							specularColor .27 .13 .13
+							ambientIntensity .0933
+							shininess .31
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	1.5 -.5 -.05
+			children [
+				
+				Shape {
+
+					geometry Box {
+						size 3 3 .1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .89 .73 .34
+							specularColor .27 .13 .13
+							ambientIntensity .0933
+							shininess .31
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-3 0 2.9
+			children [
+				
+				Shape {
+
+					geometry Box {
+						size .1 4 6
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .89 .73 .34
+							specularColor .27 .13 .13
+							ambientIntensity .0933
+							shininess .31
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	3 0 2.9
+			children [
+				
+				Shape {
+
+					geometry Box {
+						size .1 4 6
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .89 .73 .34
+							specularColor .27 .13 .13
+							ambientIntensity .0933
+							shininess .31
+						}
+					}
+				}
+			]
+		}
+		#san nha
+		Transform {
+			translation	0 -.05 0
+			children [
+			
+				Transform {
+					translation	0 -1.9 2.9
+		
+					children [
+				
+						Shape {
+
+							geometry Box {
+								size 6 0.1 6
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .89 .73 .34
+									specularColor .27 .13 .13
+									ambientIntensity .0933
+									shininess .31
+								}
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-1.45 -1.83 3.65
+		
+					children [
+				
+						Shape {
+
+							geometry Box {
+								size 3 0.05 4.5
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .89 .73 .34
+									specularColor .27 .13 .13
+									ambientIntensity .0933
+									shininess .31
+								}
+							}
+						}
+					]
+				}
+				Transform {
+					translation	1.45 -1.83 2.9
+		
+					children [
+				
+						Shape {
+
+							geometry Box {
+								size 3 0.05 6
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .89 .73 .34
+									specularColor .27 .13 .13
+									ambientIntensity .0933
+									shininess .31
+								}
+							}
+						}
+					]
+				}
+				Transform {
+					translation	0 -1.8 0.7
+		
+					children [
+				
+						Shape {
+
+							geometry Box {
+								size .2 0.1 1.5
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .89 .73 .34
+									specularColor .27 .13 .13
+									ambientIntensity .0933
+									shininess .31
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+		#gach
+		Transform {
+			children [
+				DEF HangGach Transform {
+					children [
+						DEF Gach Transform {
+							translation	-2.45 -1.85 5.4
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+							
+										}
+										texture	ImageTexture {
+											url	"../image/gach.jpg"
+
+										}
+									}
+									geometry Box {
+										size 1 .02 1
+									}
+								}
+							]
+						}
+						Transform {
+							translation	1 0 0
+							children [
+								USE	Gach
+							]
+						}
+						Transform {
+							translation	2 0 0
+							children [
+								USE	Gach
+							]
+						}
+						Transform {
+							translation	3 0 0
+							children [
+								USE	Gach
+							]
+						}
+						Transform {
+							translation	4 0 0
+							children [
+								USE	Gach
+							]
+						}
+						Transform {
+							translation	5 0 0
+							children [
+								USE	Gach
+							]
+						}	
+					]
+				}
+				Transform {
+					translation	0 0 -1
+					children [
+						USE	HangGach
+					]
+				}
+				Transform {
+					translation	0 0 -2
+					children [
+						USE	HangGach
+					]
+				}
+				Transform {
+					translation	0 0 -3
+					children [
+						USE	HangGach
+					]
+				}
+				Transform {
+					translation	0 0 -4
+					children [
+						USE	HangGach
+					]
+				}
+				Transform {
+					translation	0 0 -5
+					children [
+						USE	HangGach
+					]
+				}
+				DEF HangGachHoa Transform {
+					children [
+						DEF GachHoa Transform {
+						translation	-2.6 -1.84 0.35
+						children [
+							Shape {
+								appearance Appearance {
+									material Material {
+				
+									}
+							
+								}
+								geometry Box {
+									size .75 .02 .75
+								}
+							}
+						]
+					}
+					Transform {
+						translation	0 0 .75
+						children [
+							USE	GachHoa
+						]
+					}
+					]
+				}
+				Transform {
+					translation	.75 0 0
+					children [
+						USE	HangGachHoa
+					]
+				}
+				Transform {
+					translation	1.5 0 0
+					children [
+						USE	HangGachHoa
+					]
+				}
+				Transform {
+					translation 2.25 0 0
+					children [
+						USE	HangGachHoa
+					]
+				}
+			]
+		}
+	]
+}
