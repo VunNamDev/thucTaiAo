@@ -65,13 +65,13 @@ Transform {
 			]
 		}
 		Transform {
-			translation	-3 0 2.9
+			translation	-3 0 3.65
 			children [
 				
 				Shape {
 
 					geometry Box {
-						size .1 4 6
+						size .1 4 7.5
 					}
 					appearance Appearance {
 						material Material {
@@ -85,13 +85,13 @@ Transform {
 			]
 		}
 		Transform {
-			translation	3 0 2.9
+			translation	3 0 3.65
 			children [
 				
 				Shape {
 
 					geometry Box {
-						size .1 4 6
+						size .1 4 7.5
 					}
 					appearance Appearance {
 						material Material {
@@ -110,14 +110,14 @@ Transform {
 			children [
 			
 				Transform {
-					translation	0 -1.9 2.9
+					translation	0 -1.9 3.65
 		
 					children [
 				
 						Shape {
 
 							geometry Box {
-								size 6 0.1 6
+								size 6 0.1 7.5
 							}
 							appearance Appearance {
 								material Material {
@@ -138,7 +138,7 @@ Transform {
 						Shape {
 
 							geometry Box {
-								size 3 0.05 4.5
+								size 3 0.05 7.5
 							}
 							appearance Appearance {
 								material Material {
@@ -152,14 +152,14 @@ Transform {
 					]
 				}
 				Transform {
-					translation	1.45 -1.83 2.9
+					translation	1.45 -1.83 3.65
 		
 					children [
 				
 						Shape {
 
 							geometry Box {
-								size 3 0.05 6
+								size 3 0.05 7.5
 							}
 							appearance Appearance {
 								material Material {
@@ -199,6 +199,7 @@ Transform {
 		Transform {
 			children [
 				DEF HangGach Transform {
+					translation	0 0 1.5
 					children [
 						DEF Gach Transform {
 							translation	-2.45 -1.85 5.4
@@ -248,9 +249,11 @@ Transform {
 							children [
 								USE	Gach
 							]
-						}	
+						}
+						
 					]
 				}
+			
 				Transform {
 					translation	0 0 -1
 					children [
@@ -281,6 +284,19 @@ Transform {
 						USE	HangGach
 					]
 				}
+				Transform {
+					translation	0 0 -6
+					children [
+						USE	HangGach
+					]
+				}
+				Transform {
+					scale 1 1 .5
+					translation	0 0 -3.275
+					children [
+						USE	HangGach
+					]
+				}
 				DEF HangGachHoa Transform {
 					children [
 						DEF GachHoa Transform {
@@ -289,7 +305,10 @@ Transform {
 							Shape {
 								appearance Appearance {
 									material Material {
-				
+									   
+									}
+									texture	ImageTexture {
+										url	"../image/gachNhaTam.jpg"
 									}
 							
 								}
@@ -324,6 +343,60 @@ Transform {
 					children [
 						USE	HangGachHoa
 					]
+				}
+			]
+		}
+		Transform {
+			scale 0.017 .018 .018
+			translation	-1.5 -1.9 3.4
+			children [
+				Inline {
+					url	"./bed.wrl"
+				}]
+	
+		}
+		Transform {
+			translation	-0.1 -0.1 1.7
+			children [
+				Transform {
+					scale 0.0012 .0015 .0012
+					translation	-1.5 -1.8 5
+					rotation 0 1 0 1.57
+					children [
+						Inline {
+							url	"./ban.wrl"
+						}]
+	
+				}
+			]
+		}
+		Transform {
+			translation	-0.1 -0.1 0.7
+			children [
+				Transform {
+					scale 0.0013 .0016 .0013
+					translation	-1.5 -1.8 5
+					rotation 0 1 0 1.57
+					children [
+						Inline {
+							url	"./ghe.wrl"
+						}]
+	
+				}
+			]
+		}
+		Transform {
+			translation	1.4 -1.78 5.5
+		
+			children [
+				Transform {
+					scale 0.00005 .00005 .00005
+					rotation 0 1 0 -1.57
+					children [
+						Inline {
+							url	"./tu.wrl"
+						}]
+	
 				}
 			]
 		}
