@@ -346,57 +346,141 @@ Transform {
 				}
 			]
 		}
-		Transform {
-			scale 0.017 .018 .018
-			translation	-1.5 -1.9 3.4
-			children [
-				Inline {
-					url	"./bed.wrl"
-				}]
+#		Transform {
+#			scale 0.017 .018 .018
+#			translation	-1.5 -1.9 3.4
+#			children [
+#				Inline {
+#					url	"./bed.wrl"
+#				}]
 	
-		}
+#		}
+#		Transform {
+#			translation	-0.1 -0.1 1.7
+#			children [
+#				Transform {
+#					scale 0.0012 .0015 .0012
+#					translation	-1.5 -1.8 5
+#					rotation 0 1 0 1.57
+#					children [
+#						Inline {
+#							url	"./ban.wrl"
+#						}]
+	
+#				}
+#			]
+#		}
+#		Transform {
+#			translation	-0.1 -0.1 0.7
+#			children [
+#				Transform {
+#					scale 0.0013 .0016 .0013
+#					translation	-1.5 -1.8 5
+#					rotation 0 1 0 1.57
+#					children [
+#						Inline {
+#							url	"./ghe.wrl"
+#						}]
+	
+#				}
+#			]
+#		}
+#		Transform {
+#			translation	1.4 -1.78 5.5
+		
+#			children [
+#				Transform {
+#					scale 0.00005 .00005 .00005
+#					rotation 0 1 0 -1.57
+#					children [
+#						Inline {
+#							url	"./tu.wrl"
+#						}]
+	
+#				}
+#			]
+#		}
+#		Transform {
+#			translation	2.05 -0.5 0.5
+		
+#			children [
+#				Transform {
+					
+#					scale .06 .07 .07
+#					children [
+#						Inline {
+#							url	"./gas.wrl"
+#						}]
+	
+#				}
+#			]
+#		}
+#		Transform {
+#			translation	1.3 -2 -.3
+#			scale .7 .7 .7
+#			children [
+#				Transform {
+					
+				
+#					children [
+#						Inline {
+#							url	"./thungRac.wrl"
+#						}]
+	
+#				}
+#			]
+#		}
 		Transform {
-			translation	-0.1 -0.1 1.7
+				   	translation	-2.8 -1 .7
 			children [
-				Transform {
-					scale 0.0012 .0015 .0012
-					translation	-1.5 -1.8 5
-					rotation 0 1 0 1.57
+				Transform {	  	rotation 0 1 0 -1.54
+				
+					scale .35 .35 .35
 					children [
-						Inline {
-							url	"./ban.wrl"
-						}]
+						Transform {
+					
+				
+							children [
+								Inline {
+									url	"./wc.wrl"
+								}]
 	
+						}
+					]
 				}
 			]
 		}
-		Transform {
-			translation	-0.1 -0.1 0.7
+			Transform {
+
 			children [
-				Transform {
-					scale 0.0013 .0016 .0013
-					translation	-1.5 -1.8 5
-					rotation 0 1 0 1.57
+				Transform {	  	
+					translation	-1 -1 0.2
+					scale .002 .002 .002
 					children [
-						Inline {
-							url	"./ghe.wrl"
-						}]
+						Transform {
+					
+				
+							children [
+								Inline {
+									url	"./voiNuoc.wrl"
+								}]
 	
+						}
+					]
 				}
 			]
 		}
-		Transform {
-			translation	1.4 -1.78 5.5
+		Transform {	  	
 		
 			children [
 				Transform {
-					scale 0.00005 .00005 .00005
-					rotation 0 1 0 -1.57
+					translation	0 2.1 3.5
+					scale 1.1 1.1 1.1
 					children [
 						Inline {
-							url	"./tu.wrl"
+							url	"./maiNha.wrl"
 						}]
-	
+
 				}
 			]
 		}

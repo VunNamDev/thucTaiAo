@@ -1,0 +1,218 @@
+#VRML V2.0 utf8
+
+#gachHoaTrang.jpg
+Transform {
+	children [
+		Transform {
+			children [
+				Transform {
+					children [
+						Shape {
+							appearance Appearance {
+								texture	ImageTexture {
+									repeatS	TRUE
+									repeatT	TRUE
+								
+								}
+							}
+							geometry Box {
+								size 32 1 13
+
+							}
+						}
+					]
+				}
+				DEF HANG Transform {
+					children [
+						DEF GACH Transform {
+							translation	-14.1 0 4.55
+							children [
+								Shape {
+									appearance Appearance {
+										texture	ImageTexture {
+											repeatS	TRUE
+											repeatT	TRUE
+											url	 "../image/gachHoaTrang.jpg"
+										}
+									}
+									geometry Box {
+										size 4 1.05 4.5
+
+									}
+								}
+							]
+						}
+						Transform {
+							translation	0 0 -4.5
+							children [
+								USE	GACH
+							]
+						}
+						Transform {
+							translation	0 0 -9
+							children [
+								USE	GACH
+							]
+						}
+					]
+				}
+				Transform {
+					translation	4 0 0
+					children [
+						USE	 HANG
+					]
+				}
+				Transform {
+					translation	8 0 0
+					children [
+						USE	 HANG
+					]
+				}
+				Transform {
+					translation	12 0 0
+					children [
+						USE	 HANG
+					]
+				}
+				Transform {
+					translation	16 0 0
+					children [
+						USE	 HANG
+					]
+				}
+				Transform {
+					translation	20 0 0
+					children [
+						USE	 HANG
+					]
+				}
+				Transform {
+					translation	24 0 0
+					children [
+						USE	 HANG
+					]
+				}
+				Transform {
+					translation	28 0 0
+					children [
+						USE	 HANG
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-14.5 -10 0
+			children [
+				Shape {
+					appearance Appearance {
+						texture	ImageTexture {
+							repeatS	TRUE
+							repeatT	TRUE
+						
+						}
+					}
+					geometry Box {
+						size 1 20 13
+
+					}
+				}
+			]
+		}
+		
+		DEF ABC Transform {
+			children [
+				DEF H Transform {
+					children [
+						DEF H2 Transform {
+							translation	-14.5 -2.5 4.52
+							children [
+								Shape {
+									appearance Appearance {
+										texture	ImageTexture {
+											repeatS	TRUE
+											repeatT	TRUE
+								url	 "../image/gachHoaTrang.jpg"
+										}
+									}
+									geometry Box {
+										size 1.02 4 4.5
+
+									}
+								}
+							]
+						}
+						Transform {
+							translation	0 0 -4.5
+							children [
+								USE	H2
+							]
+						}
+						Transform {
+							translation	0 0 -9
+							children [
+								USE	H2
+							]
+						}
+					]
+				}
+				Transform {
+					translation	0 -4 0
+					children [
+						USE		H
+					]
+				}
+				Transform {
+					translation	0 -8 0
+					children [
+						USE		H
+					]
+				}
+				Transform {
+					translation	0 -12 0
+					children [
+						USE		H
+					]
+				}
+				Transform {
+					translation	0 -16 0
+					children [
+						USE		H
+					]
+				}
+			]
+		}
+		Transform {
+			scale .0025 .002 .002
+			translation	10 0 0
+			children [
+				Inline {
+					url	"bepDien.wrl"
+				}
+			]
+		}
+#		Transform {
+#			translation	29 0 0
+#			children [
+#				USE	 ABC
+#			]
+#		}
+#		Transform {
+#			translation	14.5 -10 0
+#			children [
+#				Shape {
+#					appearance Appearance {
+#						texture	ImageTexture {
+#							repeatS	TRUE
+#							repeatT	TRUE
+						
+#						}
+#					}
+#					geometry Box {
+#						size 1 20 13
+
+#					}
+#				}
+#			]
+#		}
+	]
+}
