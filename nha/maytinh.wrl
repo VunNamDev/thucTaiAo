@@ -1,0 +1,209 @@
+#VRML V2.0 utf8
+
+DEF	man Transform {
+	children [
+		#thanh o tren
+		Transform {
+			translation	0 .2 0
+			children [
+				Shape{
+					geometry Box {size .605 .02 .015}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+
+				}
+			]
+		}
+		#thanh o duoi
+		Transform {
+			translation	0 -.2 0
+			children [
+				Shape{
+					geometry Box {size .605 .02 .015}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+
+				}
+			]
+		}
+		#thanh o ria phải
+		Transform {
+			translation	.3 0 0
+			children [
+				Shape{
+					geometry Box {size .02 .4 .015}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+
+				}
+			]
+		}
+		#thanh o ria tr
+		Transform {
+			translation	-.3 0 0
+			children [
+				Shape{
+					geometry Box {size .02 .4 .015}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+
+				}
+			]
+		}
+		DEF bo Transform {
+			rotation 1 0 0 1.57
+			translation	.3 .2 -.0075
+			children [
+				Transform {
+					rotation 0 1 0 1.57
+					children [
+						Shape {
+							geometry Extrusion {
+								creaseAngle	1
+								solid FALSE
+								endCap TRUE
+								beginCap TRUE
+								spine [0 0 0, 0 .015 0]
+								crossSection [
+									0.01 0,
+									0.00980804695000557 0.00194992692849922,
+									0.00923955699470272 0.0038249949727601,
+									0.00831635481025376 0.00555321912677405,
+									0.007073882691672 0.00706825181105366,
+									0.00555983990149638 0.0083119299966812,
+									0.00383235146600618 0.00923650811946811,
+									0.00195773672000588 0.00980649106128898,
+									7.96326710733263E-06 0.00999999682931835,
+									-0.00194211590047305 0.00980959661908326,
+									-0.00381763605394573 0.00924260001079857,
+									-0.0055465948305537 0.00832077435012361,
+									-0.00706261644820005 0.00707950908648432,
+									-0.00830749991221184 0.00556645715052225,
+									-0.00923345338702812 0.00383970552901897,
+									-0.00980492895392012 0.00196554527004056,
+								]
+							}
+							appearance Appearance {
+								material Material {
+									ambientIntensity 0
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+		Transform{
+			translation	0 -.4 0
+			children [
+				USE	bo
+			]
+		}
+		DEF bo2 Transform {
+			rotation 1 0 0 1.57
+			translation	-.3 .2 -.0075
+			children [
+				Transform {
+					rotation 0 1 0 -1.57
+					children [
+						Shape {
+							geometry Extrusion {
+								creaseAngle	1
+								solid FALSE
+								endCap TRUE
+								beginCap TRUE
+								spine [0 0 0, 0 .015 0]
+								crossSection [
+									0.01 0,
+									0.00980804695000557 0.00194992692849922,
+									0.00923955699470272 0.0038249949727601,
+									0.00831635481025376 0.00555321912677405,
+									0.007073882691672 0.00706825181105366,
+									0.00555983990149638 0.0083119299966812,
+									0.00383235146600618 0.00923650811946811,
+									0.00195773672000588 0.00980649106128898,
+									7.96326710733263E-06 0.00999999682931835,
+									-0.00194211590047305 0.00980959661908326,
+									-0.00381763605394573 0.00924260001079857,
+									-0.0055465948305537 0.00832077435012361,
+									-0.00706261644820005 0.00707950908648432,
+									-0.00830749991221184 0.00556645715052225,
+									-0.00923345338702812 0.00383970552901897,
+									-0.00980492895392012 0.00196554527004056,
+								]
+							}
+							appearance Appearance {
+								material Material {
+									ambientIntensity 0
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+		Transform{
+			translation	0 -.4 0
+			children [
+				USE	bo2
+			]
+		}	
+	]
+}
+Transform {
+	children [
+		# ánh sáng
+		DirectionalLight {
+			on TRUE
+			intensity 1
+			ambientIntensity 0.5
+			color 1 1 1 
+			direction 0 0 -1
+		}
+		# màn hình
+		Shape {
+			geometry Box {size .6 .4 .005}
+			appearance Appearance {
+				material Material {
+					diffuseColor .24 .24 .24
+					specularColor .3 .25 .3
+					ambientIntensity .06
+					shininess .05
+				}
+			}
+		}
+	]
+}
+Transform {
+	translation	0 0 -.005
+	children [
+		Shape {
+			geometry Box {size .6 .4 .005}
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0
+				}
+			}
+		}
+	]
+}
+Transform {
+	translation	0 0 -.02
+	children [
+		Shape {
+			geometry Box {size .5 .3 .03}
+		}
+	]
+}

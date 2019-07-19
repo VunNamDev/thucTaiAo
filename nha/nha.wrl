@@ -1,6 +1,11 @@
 #VRML V2.0 utf8
-
-Transform {
+Background{
+	skyAngle[0.075,0.1,0.2,1.309,1.5708]
+	skyColor[1 1 0,.9 .9 .5,.7 .7 .9,0 0.4 1,0 0.7 1,1 1 1]
+	groundAngle[0.75,1.4,1.5,1.5708]
+	groundColor[1.6 .5 0,.16 .5 0,.36 .7 .2,.46 .8 .3,.66 1 .5]
+}
+DEF NHA Transform {
 	children [
 		#mat sau
 		Transform {
@@ -11,6 +16,66 @@ Transform {
 
 					geometry Box {
 						size 3 4 .1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .89 .73 .34
+							specularColor .27 .13 .13
+							ambientIntensity .0933
+							shininess .31
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-2.55 0 7.45
+			children [
+				
+				Shape {
+
+					geometry Box {
+						size 1 4 .1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .89 .73 .34
+							specularColor .27 .13 .13
+							ambientIntensity .0933
+							shininess .31
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	0.5 0 7.45
+			children [
+				
+				Shape {
+
+					geometry Box {
+						size 1.5 4 .1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .89 .73 .34
+							specularColor .27 .13 .13
+							ambientIntensity .0933
+							shininess .31
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-1 -1.25 7.45
+			children [
+				
+				Shape {
+
+					geometry Box {
+						size 3 1.5 .1
 					}
 					appearance Appearance {
 						material Material {
@@ -84,6 +149,7 @@ Transform {
 				}
 			]
 		}
+			  #ria phai
 		Transform {
 			translation	3 0 3.65
 			children [
@@ -355,36 +421,36 @@ Transform {
 #				}]
 	
 #		}
-#		Transform {
-#			translation	-0.1 -0.1 1.7
-#			children [
-#				Transform {
-#					scale 0.0012 .0015 .0012
-#					translation	-1.5 -1.8 5
-#					rotation 0 1 0 1.57
-#					children [
-#						Inline {
-#							url	"./ban.wrl"
-#						}]
+		Transform {
+			translation	-0.1 -0.1 1.7
+			children [
+				Transform {
+					scale 0.0012 .0015 .0012
+					translation	-1.5 -1.8 5
+					rotation 0 1 0 1.57
+					children [
+						Inline {
+							url	"./ban.wrl"
+						}]
 	
-#				}
-#			]
-#		}
-#		Transform {
-#			translation	-0.1 -0.1 0.7
-#			children [
-#				Transform {
-#					scale 0.0013 .0016 .0013
-#					translation	-1.5 -1.8 5
-#					rotation 0 1 0 1.57
-#					children [
-#						Inline {
-#							url	"./ghe.wrl"
-#						}]
+				}
+			]
+		}
+		Transform {
+			translation	-0.1 -0.1 0.7
+			children [
+				Transform {
+					scale 0.0013 .0016 .0013
+					translation	-1.5 -1.8 5
+					rotation 0 1 0 1.57
+					children [
+						Inline {
+							url	"./ghe.wrl"
+						}]
 	
-#				}
-#			]
-#		}
+				}
+			]
+		}
 #		Transform {
 #			translation	1.4 -1.78 5.5
 		
@@ -430,46 +496,46 @@ Transform {
 #				}
 #			]
 #		}
-		Transform {
-				   	translation	-2.8 -1 .7
-			children [
-				Transform {	  	rotation 0 1 0 -1.54
+#		Transform {
+#				   	translation	-2.8 -1 .7
+#			children [
+#				Transform {	  	rotation 0 1 0 -1.54
 				
-					scale .35 .35 .35
-					children [
-						Transform {
+#					scale .35 .35 .35
+#					children [
+#						Transform {
 					
 				
-							children [
-								Inline {
-									url	"./wc.wrl"
-								}]
+#							children [
+#								Inline {
+#									url	"./wc.wrl"
+#								}]
 	
-						}
-					]
-				}
-			]
-		}
-			Transform {
+#						}
+#					]
+#				}
+#			]
+#		}
+#			Transform {
 
-			children [
-				Transform {	  	
-					translation	-1 -1 0.2
-					scale .002 .002 .002
-					children [
-						Transform {
+#			children [
+#				Transform {	  	
+#					translation	-1 -1 0.2
+#					scale .002 .002 .002
+#					children [
+#						Transform {
 					
 				
-							children [
-								Inline {
-									url	"./voiNuoc.wrl"
-								}]
+#							children [
+#								Inline {
+#									url	"./voiNuoc.wrl"
+#								}]
 	
-						}
-					]
-				}
-			]
-		}
+#						}
+#					]
+#				}
+#			]
+#		}
 		Transform {	  	
 		
 			children [
@@ -484,5 +550,102 @@ Transform {
 				}
 			]
 		}
+		Transform {
+			translation	-1.5 -.48 5.6
+			scale .35 .35 .35
+			children [
+				Transform {
+					rotation 0 1 0 -1.57
+					children [
+						Inline {
+							url	"nguoiNgoiChoi.wrl"
+						}
+					]
+				}
+			]
+		}
+		Transform {
+			translation	-4 -2 6
+			scale .03 .03 .03
+			children [
+				Transform {
+					children [
+						Inline {
+							url	"chauCay.wrl"
+						}
+					]
+				}
+			]
+		}
 	]
 }
+#Transform {
+#	translation	6.1 0 0
+#	children [
+#		USE	NHA
+#	]
+#}
+#Transform {
+#	translation	12.2 0 0
+#	children [
+#		USE	NHA
+#	]
+#}
+#Transform {
+#	translation	18.3 0 0
+#	children [
+#		USE	NHA
+#	]
+#}
+#Transform {
+#	translation	24.4 0 0
+#	children [
+#		USE	NHA
+#	]
+#}
+#Transform {
+#	translation	20 -2 10
+#	children [
+#		Shape {
+
+#			geometry Box {
+#				size 70 0.2 30
+#			}
+#			appearance Appearance {
+#				material Material {
+#					diffuseColor 0 0 0
+#					specularColor .29 .3 .29
+#					ambientIntensity 0
+#					shininess .08
+#				}
+#			}
+#		}
+#	]
+#}
+#Transform {
+#	translation	0 -1 9
+#	scale .35 .35 .35
+#	children [
+#		Transform {
+#			children [
+#				Inline {
+#					url	"nguoiDiCoTay.wrl"
+#				}
+#			]
+#		}
+#	]
+#}
+	
+#Transform {
+#	translation	-8 -2 2
+#	scale .03 .03 .03
+#	children [
+#		Transform {
+#			children [
+#				Inline {
+#					url	"Cay.wrl"
+#				}
+#			]
+#		}
+#	]
+#}		

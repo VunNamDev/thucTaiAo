@@ -1,0 +1,569 @@
+#VRML V2.0 utf8
+Background{
+skyAngle[0.075,0.1,0.2,1.309,1.5708]
+skyColor[1 1 0,.9 .9 .5,.7 .7 .9,0 0.4 1,0 0.7 1,1 1 1]
+groundAngle[0.75,1.4,1.5,1.5708]
+groundColor[1.6 .5 0,.16 .5 0,.36 .7 .2,.46 .8 .3,.66 1 .5]
+}
+Transform{
+children[
+
+Transform{
+translation	-1.5 0 -.05
+children[
+
+Shape{
+
+geometry Box{
+size 3 4 .1
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Transform{
+translation	-1.5 0 1.5
+children[
+
+Shape{
+
+geometry Box{
+size 3 4 .1
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+Transform{
+translation	1.5 -.5 -.05
+children[
+
+Shape{
+
+geometry Box{
+size 3 3 .1
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+Transform{
+translation	-3 0 3.65
+children[
+
+Shape{
+
+geometry Box{
+size .1 4 7.5
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+
+Transform{
+translation	3 0 3.65
+children[
+
+Shape{
+
+geometry Box{
+size .1 4 7.5
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+
+Transform{
+translation	0 -.05 0
+children[
+
+Transform{
+translation	0 -1.9 3.65
+
+children[
+
+Shape{
+
+geometry Box{
+size 6 0.1 7.5
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+Transform{
+translation	-1.45 -1.83 3.65
+
+children[
+
+Shape{
+
+geometry Box{
+size 3 0.05 7.5
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+Transform{
+translation	1.45 -1.83 3.65
+
+children[
+
+Shape{
+
+geometry Box{
+size 3 0.05 7.5
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+Transform{
+translation	0 -1.8 0.7
+
+children[
+
+Shape{
+
+geometry Box{
+size .2 0.1 1.5
+}
+appearance Appearance{
+material Material{
+diffuseColor .89 .73 .34
+specularColor .27 .13 .13
+ambientIntensity .0933
+shininess .31
+}
+}
+}
+]
+}
+]
+}
+
+Transform{
+children[
+DEF HangGach Transform{
+translation	0 0 1.5
+children[
+DEF Gach Transform{
+translation	-2.45 -1.85 5.4
+children[
+Shape{
+appearance Appearance{
+material Material{
+
+}
+texture	ImageTexture{
+url	"../image/gach.jpg"
+
+}
+}
+geometry Box{
+size 1 .02 1
+}
+}
+]
+}
+Transform{
+translation	1 0 0
+children[
+USE	Gach
+]
+}
+Transform{
+translation	2 0 0
+children[
+USE	Gach
+]
+}
+Transform{
+translation	3 0 0
+children[
+USE	Gach
+]
+}
+Transform{
+translation	4 0 0
+children[
+USE	Gach
+]
+}
+Transform{
+translation	5 0 0
+children[
+USE	Gach
+]
+}
+
+]
+}
+
+Transform{
+translation	0 0 -1
+children[
+USE	HangGach
+]
+}
+Transform{
+translation	0 0 -2
+children[
+USE	HangGach
+]
+}
+Transform{
+translation	0 0 -3
+children[
+USE	HangGach
+]
+}
+Transform{
+translation	0 0 -4
+children[
+USE	HangGach
+]
+}
+Transform{
+translation	0 0 -5
+children[
+USE	HangGach
+]
+}
+Transform{
+translation	0 0 -6
+children[
+USE	HangGach
+]
+}
+Transform{
+scale 1 1 .5
+translation	0 0 -3.275
+children[
+USE	HangGach
+]
+}
+DEF HangGachHoa Transform{
+children[
+DEF GachHoa Transform{
+translation	-2.6 -1.84 0.35
+children[
+Shape{
+appearance Appearance{
+material Material{
+
+}
+texture	ImageTexture{
+url	"../image/gachNhaTam.jpg"
+}
+
+}
+geometry Box{
+size .75 .02 .75
+}
+}
+]
+}
+Transform{
+translation	0 0 .75
+children[
+USE	GachHoa
+]
+}
+]
+}
+Transform{
+translation	.75 0 0
+children[
+USE	HangGachHoa
+]
+}
+Transform{
+translation	1.5 0 0
+children[
+USE	HangGachHoa
+]
+}
+Transform{
+translation 2.25 0 0
+children[
+USE	HangGachHoa
+]
+}
+]
+}
+Transform{
+scale 0.017 .018 .018
+translation	-1.5 -1.9 3.4
+children[
+Inline{
+url	"./bed.wrl"
+}]
+
+}
+Transform{
+translation	-0.1 -0.1 1.7
+children[
+Transform{
+scale 0.0012 .0015 .0012
+translation	-1.5 -1.8 5
+rotation 0 1 0 1.57
+children[
+Inline{
+url	"./ban.wrl"
+}]
+
+}
+]
+}
+Transform{
+translation	-0.1 -0.1 0.7
+children[
+Transform{
+scale 0.0013 .0016 .0013
+translation	-1.5 -1.8 5
+rotation 0 1 0 1.57
+children[
+Inline{
+url	"./ghe.wrl"
+}]
+
+}
+]
+}
+Transform{
+translation	1.4 -1.78 5.5
+
+children[
+Transform{
+scale 0.00005 .00005 .00005
+rotation 0 1 0 -1.57
+children[
+Inline{
+url	"./tu.wrl"
+}]
+
+}
+]
+}
+Transform{
+translation	2.05 -0.5 0.5
+
+children[
+Transform{
+
+scale .06 .07 .07
+children[
+Inline{
+url	"./gas.wrl"
+}]
+
+}
+]
+}
+Transform{
+translation	1.3 -2 -.3
+scale .7 .7 .7
+children[
+Transform{
+
+
+children[
+Inline{
+url	"./thungRac.wrl"
+}]
+
+}
+]
+}
+Transform{
+translation	-2.8 -1 .7
+children[
+Transform{rotation 0 1 0 -1.54
+
+scale .35 .35 .35
+children[
+Transform{
+
+
+children[
+Inline{
+url	"./wc.wrl"
+}]
+
+}
+]
+}
+]
+}
+Transform{
+
+children[
+Transform{
+translation	-1 -1 0.2
+scale .002 .002 .002
+children[
+Transform{
+
+
+children[
+Inline{
+url	"./voiNuoc.wrl"
+}]
+
+}
+]
+}
+]
+}
+Transform{
+
+children[
+Transform{
+translation	0 2.1 3.5
+scale 1.1 1.1 1.1
+children[
+Inline{
+url	"./maiNha.wrl"
+}]
+
+}
+]
+}
+Transform{
+translation 2.6 -1.85 2
+children[
+Transform{
+rotation 0 1 0 -1
+scale .0008 .0006 .0008
+children[
+Inline{
+url	"./quatDien.wrl"
+}]
+
+}
+]
+}
+
+]
+}

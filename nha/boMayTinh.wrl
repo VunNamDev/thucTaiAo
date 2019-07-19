@@ -1,0 +1,30 @@
+#VRML V2.0 utf8
+
+
+Transform {
+	translation	0 .25 -.195
+	children [
+		Inline {
+			url	["maytinh.wrl"]
+		}
+	]
+}
+Transform {
+	scale 1.2 1.2 1.2
+	rotation 1 0 0 -1.57
+	translation	0 .01 .1
+	children [
+		Inline {
+			url	["banPhim.wrl"]
+		}
+	]
+}
+Transform {
+	scale .04 .04 .04
+	translation	.3 0 0.06
+	children [
+		Inline {
+			url	["chuot.wrl"]
+		}
+	]
+}

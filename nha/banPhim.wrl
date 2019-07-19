@@ -1,0 +1,925 @@
+#VRML V2.0 utf8
+
+Transform {
+	rotation 1 0 0 1.57
+	children [
+		Transform {
+			translation	.058  0	 -.055
+			children [
+				DEF den Transform {
+					translation	0 .01 0
+					children [
+						Shape {
+							geometry Sphere	{radius .002}
+							appearance Appearance {
+								material Material {
+									diffuseColor .11 .55 .09
+									specularColor .12 .06 .06
+									ambientIntensity .0633
+									shininess .09
+								}
+							}
+						}
+					]
+				}
+				Transform {
+					translation	.012 0 0 
+					children [USE den ]
+				}
+				Transform {
+					translation	.024 0 0 
+					children [USE den ]
+				}
+			]
+		}
+		Transform {
+			translation	-.045 0 -.03
+			children [
+				Shape {
+					geometry Extrusion {
+						crossSection [
+							.16 .05,
+							.16 -.05,
+							-.16 -.05,
+							-.16 .05,
+							.16 .05
+						]
+						spine [0 0 0, 0 .01 0]
+						scale [1 1, .95 .95]
+						creaseAngle	1
+						solid FALSE
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+							specularColor .87 .25 .25
+							ambientIntensity .157
+							shininess 1
+						}
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	0 .01 0
+			children [
+				Transform {
+					translation	-.18 0 -.065
+					children [
+						DEF	phim Shape {
+							geometry Box {size .01 .007 .01}
+							appearance Appearance {
+								material Material {
+									diffuseColor .09 .03 0
+									specularColor .22 .1 .1
+									ambientIntensity .01
+									shininess .05
+								}
+							}
+						}
+					]
+				}
+				Transform {
+					translation	-.16 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.148 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.136 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.124 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.102 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.09 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.078 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.066 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.046 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.034 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.022 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.01 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.01 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.022 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.034 0 -.065
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.034 0 -.043
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.034 0 -.031
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.034 0 -.019
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.022 0 -.043
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.022 0 -.031
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.022 0 -.019
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.01 0 -.043
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.01 0 -.031
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.01 0 -.019
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.022 0 -.007
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.01 0 .005
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.022 0 .005
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.034 0 .005
+					children [
+						USE	phim
+					]
+				}
+				#phim so
+				Transform {
+					translation	.054 0 -.043
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.054 0 -.031
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.054 0 -.019
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.054 0 -.007
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.054 0 .005
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.066 0 -.043
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.066 0 -.031
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.066 0 -.019
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.066 0 -.007
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.066 0 .005
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.06 0 .005
+					children [
+						USE	phim
+					]
+				}				
+				Transform {
+					translation	.078 0 -.043
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.078 0 -.031
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.078 0 -.019
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.078 0 -.007
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.078 0 .005
+					children [
+						USE	phim
+					]
+				}
+
+				Transform {
+					translation	.09 0 -.043
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.09 0 -.031
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.09 0 -.025
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.09 0 -.019
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.09 0 -.007
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.09 0 -.006
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	.09 0 .005
+					children [
+						USE	phim
+					]
+				}
+				#1
+				Transform {
+					translation	-.18 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.168 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.156 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.144 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.132 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.12 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.108 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.096 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.084 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.072 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.06 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.048 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.036 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.024 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.012 0 -.045
+					children [
+						USE	phim
+					]
+				}
+				#2
+				Transform {
+					translation	-.18 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.175 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.163 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.151 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.139 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.127 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.115 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.103 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.091 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.079 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.067 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.055 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.043 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.031 0 -.033
+					children [
+						USE	phim
+					]
+				}
+
+				Transform {
+					translation	-.019 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.012 0 -.033
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.019 0 -.03
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.012 0 -.03
+					children [
+						USE	phim
+					]
+				}
+				#3
+				Transform {
+					translation	-.18 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.172 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.16 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.148 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.136 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.124 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.112 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.1 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.088 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.076 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.064 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.052 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.04 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.028 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.019 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.012 0 -.021
+					children [
+						USE	phim
+					]
+				}
+				#4
+				Transform {
+					translation	-.18 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.17 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.158 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.146 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.134 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.122 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.11 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.098 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.086 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.074 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.062 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.05 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.038 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.028 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.018 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.012 0 -.009
+					children [
+						USE	phim
+					]
+				}
+				#5
+				Transform {
+					translation	-.18 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.168 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.156 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.144 0 .003
+					children [
+						USE	phim
+					]
+				}
+
+				Transform {
+					translation	-.132 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.137 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.128 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.12 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.11 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.108 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.1 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.096 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.09 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.084 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.08 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.072 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.065 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.06 0 .003
+					children [
+						USE	phim
+					]
+				}
+
+				Transform {
+					translation	-.048 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.036 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.024 0 .003
+					children [
+						USE	phim
+					]
+				}
+				Transform {
+					translation	-.012 0 .003
+					children [
+						USE	phim
+					]
+				}
+
+			]
+		}
+	]
+}

@@ -95,5 +95,560 @@ Transform {
 				}
 			]
 		}
+				DEF BANGDIEN2 Transform {
+					translation	.7 -2.2 3.5
+			children [
+				DEF BANG2 Transform {
+					children [
+						Shape {
+							geometry Box {
+								size 1 0.6 0.05
+							}
+						}
+
+					]
+					translation	-2 0 0
+
+				}DEF NUTBATQUAT Transform {
+					children [
+						Transform {
+							children [
+								Shape {
+
+									geometry Cylinder {
+										height 0.1
+										radius 0.1
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 1 .85 0
+											specularColor .87 .25 .25
+											ambientIntensity .157
+											shininess 1
+										}
+									}
+								}
+							]  
+							rotation 1 0 0 1.5707
+							translation	-2 0 -0.05
+						}
+					]
+	
+				}
+				DEF	TOURCH2 TouchSensor	{
+					enabled	TRUE
+				}
+				DEF ma2 Script {
+
+				eventIn SFBool turnOn
+
+				eventOut SFBool On
+
+				eventOut SFBool Off
+
+				field SFBool turn FALSE
+
+				url "javascript:
+
+				function turnOn(val)
+					{
+
+					if(val){
+
+							turn = !turn;
+
+							if(turn)
+
+							{		  On= TRUE; Off=FALSE;  }
+
+        							else
+
+        							{  On=FALSE; Off=TRUE;  }
+
+            							}
+
+    						}
+
+    					"
+
+				}
+			]
+			scale .3 0.3 0.5
+			
+		
+		}
+		DEF QUAT Transform {
+			scale .3 .3 .3
+			translation	0 -.5 0
+			children [
+				Transform {
+					children [
+						DEF CANHVATHANQUAT Transform {
+							children [
+								Transform {
+									children [
+										Transform {
+											children [
+												Shape {
+
+													geometry Sphere	{
+														radius 0.8
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor 0 .35 .25
+															specularColor 0 .31 .36
+															ambientIntensity .0533
+															shininess .32
+														}
+													}
+												}
+											]
+											scale 1 0.2 1
+										}
+										DEF CANHQUAT Transform {
+											children [
+												Shape {
+
+													geometry Sphere	{
+														radius 3
+													}
+													appearance Appearance {
+														material Material {
+															diffuseColor 0 .35 .25
+															specularColor 0 .31 .36
+															ambientIntensity .0533
+															shininess .32
+														}
+													}
+												}
+											]
+											scale 0.7 0.01 0.15
+											translation	2 0 0
+										}
+
+									]
+								}
+								Transform {
+									children [
+										USE	CANHQUAT
+									]
+									rotation 0 1 0 2.06
+								}
+								Transform {
+									children [
+										USE	CANHQUAT
+									]
+									rotation 0 1 0 4.12
+								}
+		
+							]
+						}
+
+						Transform {
+							children [
+								Transform {
+										children [
+											Shape {
+												appearance Appearance {
+													material Material {
+														diffuseColor 0 .35 .25
+														specularColor 0 .31 .36
+														ambientIntensity .0533
+														shininess .32
+													}
+												}
+												geometry Cylinder {
+													height 1
+													radius 0.05
+												}
+											}
+										]
+										translation	0 0.5 0
+									}
+									Transform {
+										children [
+											Shape {
+												appearance Appearance {
+													material Material {
+														diffuseColor 0 .35 .25
+														specularColor 0 .31 .36
+														ambientIntensity .0533
+														shininess .32
+													}
+												}
+												geometry Cone {
+													bottom TRUE
+													bottomRadius 0.5
+													height 0.5
+												}
+											}
+										]
+										translation	0 1 0
+										rotation 0 0 1 3.14
+									}
+							]
+						}
+		  
+					]
+				}
+			]
+		
+		}
+		DEF BANGDIEN1 Transform {
+				translation	4 -4 6.5
+			children [
+				Transform {
+					
+					children [
+						DEF BANG1 Transform {
+							children [
+								Shape {
+									geometry Box {
+										size 1 0.6 0.05
+									}
+								}
+
+							]
+		
+						}
+						
+						DEF NUTBATDEN Transform {
+							 translation 0 0 -0.09
+							children [
+								Transform {
+									children [
+										Shape {
+
+											geometry Cylinder {
+												height 0.1
+												radius 0.1
+											}
+											appearance Appearance {
+												material Material {
+													diffuseColor 1 .85 0
+													specularColor .87 .25 .25
+													ambientIntensity .157
+													shininess 1
+												}
+											}
+										}
+									]  
+							
+								}
+								
+							]
+							
+						}
+						DEF	TOURCH1 TouchSensor	{
+							enabled	TRUE
+						}
+						DEF ma Script {
+
+						eventIn SFBool turnOn
+
+						eventOut SFBool On
+
+						eventOut SFBool Off
+
+						field SFBool turn FALSE
+
+						url "javascript:
+
+						function turnOn(val)
+							{
+
+							if(val){
+
+									turn = !turn;
+
+									if(turn)
+
+									{		  On= TRUE; Off=FALSE;  }
+
+        									else
+
+        									{  On=FALSE; Off=TRUE;  }
+
+            									}
+
+    								}
+
+    							"
+
+						}
+
+					]
+					scale .3 0.3 0.5
+				
+					translation	-3.9 1.5 -3
+				}
+			]
+		}
+		Transform {
+			translation	-1.4 -0.5 -1.8
+			scale .7 .7 .7
+			children [
+				DEF BONGDEN1 Transform {
+			children [
+				Transform {
+					children [
+						Transform {
+							children [
+								Transform {
+									children [
+										Shape {
+
+											geometry Box {
+												size 4 0.3 0.05
+											}
+											appearance Appearance {
+												material Material {
+													diffuseColor .33 .3 .28
+													specularColor .31 .25 .13
+													ambientIntensity .687
+													shininess .1
+												}
+											}
+										}
+									]
+								}
+								DEF RIADUI Transform {
+									children [
+										Transform {
+											children [
+												Shape	{
+													appearance Appearance {
+														material Material {
+															diffuseColor .33 .3 .28
+															specularColor .31 .25 .13
+															ambientIntensity .687
+															shininess .1
+														}
+													}
+													geometry Extrusion {
+															crossSection [
+																0.15	0.00
+																0.15	0.01
+																0.15	0.03
+																0.14	0.04
+																0.14	0.06
+																0.13	0.07
+																0.12	0.08
+																0.12	0.10
+																0.11	0.11
+																0.10	0.12
+																0.08	0.12
+																0.07	0.13
+																0.06	0.14
+																0.04	0.14
+																0.03	0.15
+																0.01	0.15
+																0.00	0.15
+																-0.01	0.15
+																-0.03	0.15
+																-0.04	0.14
+																-0.06	0.14
+																-0.07	0.13
+																-0.08	0.12
+																-0.10	0.12
+																-0.11	0.11
+																-0.12	0.10
+																-0.12	0.08
+																-0.13	0.07
+																-0.14	0.06
+																-0.14	0.04
+																-0.15	0.03
+																-0.15	0.01
+																-0.15	0.00
+																			
+	
+															]
+															spine[
+																0 0 0,0 0.1 0
+															]		 #đường xương sống, luôn luôn vuông góc với mặt crossSection
+															scale	1 1	 #chia tỉ lệ tương ứng với các điểm trong spine	
+	
+															solid FALSE
+			
+													}
+					
+												}
+
+											]
+											rotation 0 0 1 1.5705
+											translation	-1.9 0 0.15
+										}
+										Transform {
+											children [
+												Shape {
+													appearance Appearance {
+														material Material {
+															diffuseColor .33 .3 .28
+															specularColor .31 .25 .13
+															ambientIntensity .687
+															shininess .1
+														}
+													}
+													geometry Box {
+														size 0.1 0.3 0.2
+													}
+												}
+											]
+											rotation 0 0 1 3.14
+											translation	-1.95 0 0.1
+										}
+									]
+								}
+								Transform {
+									children [
+										USE	RIADUI
+									]
+									translation	3.9 0 0
+								}
+
+								Transform {
+									children [
+										DEF BONGTRAI Transform {
+											children [
+												Transform {
+													children [
+														Shape {
+														appearance Appearance {
+																material 	DEF MAUBONGTRAI  Material {
+																	diffuseColor  .8 .8 0.8
+																}
+															}
+															geometry Cylinder {
+																height 3.75
+																radius 0.1
+															}
+													
+														}
+						
+													]
+													rotation 0 0 1 1.5705
+													translation	0 0 0.15
+												}
+											]
+										}
+										DEF CUC Transform {
+											children [
+												Shape {
+
+													geometry Cylinder {
+														height 0.1
+														radius 0.005
+													}
+							
+												}
+						
+											]
+											rotation 0 0 1 1.5705
+											translation	-1.9 0.05 0.15
+										}
+										Transform {
+											children [
+												USE	CUC
+											]
+											translation	0 -0.1 0
+										}
+										Transform {
+											children [
+												USE	CUC
+											]
+											translation	3.8 -0.1 0
+										}
+										Transform {
+											children [
+												USE	CUC
+											]
+											translation	3.8 0 0
+										}
+									]
+								}
+
+
+
+							]
+						}
+					]
+				
+					scale 0.8 0.8 0.8
+				}
+			]
+		
+		
+		}
+			]
+		}
+		DEF timer1 TimeSensor {
+				cycleInterval  1
+				enabled	FALSE
+				loop TRUE
+				
+		}
+		DEF timer2 TimeSensor {
+				cycleInterval  1
+				enabled	TRUE
+				loop TRUE
+				
+		}
+		DEF timer3 TimeSensor {
+				cycleInterval  1
+				enabled	FALSE
+				loop TRUE
+				
+		}
+		DEF OrienIn1 OrientationInterpolator {
+			key	[0 .5 1]
+			keyValue [0 1 0 0,  0 1 0 3.14, 0 1 0 6.28 ]
+		}
+		DEF ci ColorInterpolator {
+			key [ 0 0.5 1 ]
+			keyValue [1 1 1 ]
+		}
+
+		DEF ci2 ColorInterpolator {
+			key [ 0 0.5 1 ]
+			keyValue [ .8 .8 0.8]
+		}
+
+		DEF LIGHT PointLight	{
+			on FALSE
+			color 1 1 1
+			intensity 0.5
+			location 8 0 -3
+			radius 100
+			
+		}							
+
 	]
 }
+#timer1,orien1 : quay quạt
+ROUTE TOURCH1.isActive TO ma.turnOn
+ROUTE ma.On	TO timer1.enabled
+
+ROUTE timer1.fraction_changed TO OrienIn1.set_fraction
+ROUTE OrienIn1.value_changed TO	CANHVATHANQUAT.rotation
+
+
+
+#tourch2:  công tắc bóng
+#ma2 script bóng
+#timer2,ci : màu cho bóng sáng lên
+#light phát sáng 
+ROUTE TOURCH2.isActive TO ma2.turnOn
+ROUTE ma2.On TO timer2.enabled
+ROUTE ma2.On TO	LIGHT.on
+
+#doi mau va phat sang
+ROUTE timer2.fraction_changed TO ci.set_fraction
+ROUTE ci.value_changed TO MAUBONGTRAI.diffuseColor
+
+ROUTE LIGHT.attenuation TO	BONGTRAI.translation
+
+#timer3,ci2: màu bóng tối
+ROUTE ma2.Off TO timer3.enabled
+ROUTE timer3.fraction_changed TO ci2.set_fraction
+ROUTE ci2.value_changed TO MAUBONGTRAI.diffuseColor

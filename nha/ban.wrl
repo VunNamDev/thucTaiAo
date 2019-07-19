@@ -3375,3 +3375,18 @@ DEF Table-32 Transform {
 
   ]
 }
+
+Transform {
+	translation	0 750 0
+	children [
+		Transform {
+			rotation 0 1 0 1.57
+		scale 1000 1000 1000
+		children [
+			Inline {
+				url	"boMayTinh.wrl"
+			}
+		]
+	}
+	]
+}
