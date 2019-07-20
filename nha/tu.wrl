@@ -31,12 +31,53 @@ DEF TRAI Transform {
 	]
 }
 
-Transform {
-	translation	19000 0 1010
+DEF PHAI Transform {
 	children [
-		USE	TRAI
+		Transform {
+			translation	19000 0 1010
+			children [
+			 Transform {
+				translation	-35500 32000 -15500
+				rotation 0 0 1 0.01
+					children [
+
+						Shape {
+	
+        				  appearance Appearance {
+            				material Material {
+            				  diffuseColor 0.4706 0.3216 0.2784
+            				  ambientIntensity 1.0
+            				  specularColor 0 0 0
+            				  shininess 0.145
+            				  transparency 0
+            				}
+            				texture ImageTexture {
+            				  url "../image/OLHAWOOD.JPG"
+            				}
+        				}
+							geometry Box {
+								size 19000 39000 1000
+							}
+						}
+					]
+				}
+			]
+		}
 	]
 }
+DEF	planeSensor1 PlaneSensor {
+	enabled TRUE
+
+	offset 0 0 0
+
+	autoOffset TRUE
+
+	maxPosition 0 0
+
+	minPosition -19000 0
+	
+}
+ROUTE planeSensor1.translation_changed TO PHAI.translation
 Transform {
 	rotation 1 0 0 -0.009
 	children [

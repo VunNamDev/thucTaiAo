@@ -1,0 +1,205 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		DEF CUATRAI Transform {
+			children [
+				Transform {
+					children [
+						Shape {
+
+							geometry Box {
+								size 1.8 4 0.05
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 .557 0
+									specularColor .898 .898 .8
+									emissiveColor .941 1 1
+									ambientIntensity 0
+									shininess .03
+									transparency .68
+								}
+							}
+						}
+					]
+				}
+				Transform {
+					children [
+						Shape {
+
+							geometry Box {
+								size 0.05 4 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+								}
+							}
+					
+						}
+					]
+					translation	-0.9 0 0
+				}
+				Transform {
+					children [
+						Shape {
+
+							geometry Box {
+								size 0.05 4 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+								}
+							}
+					
+						}
+					]
+					translation	0.9 0 0
+				}
+
+				Transform {
+					children [
+						Shape {
+
+							geometry Box {
+								size  1.85 0.05 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+								}
+							}
+					
+						}
+					]
+					translation	0 2 0
+				}
+				Transform {
+					children [
+						Shape {
+
+							geometry Box {
+								size  1.85 0.05 0.1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+								}
+							}
+					
+						}
+					]
+					translation	0 -2 0
+				}
+				
+			]
+		}
+		##
+		Transform {
+			children [
+				 Shape {
+
+					geometry Box {
+						size 1.75 4 0.05
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .557 0
+							specularColor .898 .898 .8
+							emissiveColor .941 1 1
+							ambientIntensity 0
+							shininess .03
+							transparency .68
+						}
+					}
+				}
+			]
+			translation	1.75 0 -0.1
+		}
+		Transform {
+			children [
+				Shape {
+
+					geometry Box {
+						size 0.05 4 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+			
+				}
+			]
+			translation	2.675 0 -0.1
+		}
+		Transform {
+			children [
+				Shape {
+
+					geometry Box {
+						size 0.05 4 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+			
+				}
+			]
+			translation	0.875 0 -0.1
+		}
+
+		Transform {
+			children [
+				Shape {
+
+					geometry Box {
+						size  1.85 0.05 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+			
+				}
+			]
+			translation	1.775 2 -0.1
+		}
+		Transform {
+			children [
+				Shape {
+
+					geometry Box {
+						size  1.85 0.05 0.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+			
+				}
+			]
+			translation	1.775 -2 -0.1
+		}
+		DEF	planeSensor1 PlaneSensor {
+		enabled TRUE
+
+		offset 0 0 0
+
+		autoOffset TRUE
+
+		maxPosition 1.775 0
+
+		minPosition 0 0
+	
+		}
+	]
+
+}
+ROUTE planeSensor1.translation_changed TO CUATRAI.translation
