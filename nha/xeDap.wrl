@@ -1,0 +1,1370 @@
+#VRML V2.0 utf8
+
+
+
+DEF BANHXE Transform {
+	children [
+		 Shape	{
+		appearance Appearance	{
+			material Material {
+				diffuseColor .15 .15 .15
+				specularColor .92 .91 .89
+				ambientIntensity 0
+				shininess .06
+			}
+				
+				
+		}
+		geometry Extrusion {
+				crossSection [
+						 1.00	0.00	,
+						0.98	0.19	,
+						0.92	0.38	,
+						0.83	0.56	,
+						0.71	0.71	,
+						0.56	0.83	,
+						0.38	0.92	,
+						0.20	0.98	,
+						0.00	1.00	,
+						-0.19	0.98	,
+						-0.38	0.92	,
+						-0.55	0.83	,
+						-0.71	0.71	,
+						-0.83	0.56	,
+						-0.92	0.38	,
+						-0.98	0.20	,
+						-1.00	0.00	,
+						-0.98	-0.19	,
+						-0.92	-0.38	,
+						-0.83	-0.55	,
+						-0.71	-0.71	,
+						-0.56	-0.83	,
+						-0.38	-0.92	,
+						-0.20	-0.98	,
+						0.00	-1.00	,
+						0.19	-0.98	,
+						0.38	-0.92	,
+						0.55	-0.83	,
+						0.71	-0.71	,
+						0.83	-0.56	,
+						0.92	-0.39	,
+						0.98	-0.20	,
+						1.00	0.00	,
+
+				]
+				spine	[1.00	0.00	0.00	,
+						0.98	0.19	0.00	,
+						0.92	0.38	0.00	,
+						0.83	0.56	0.00	,
+						0.71	0.71	0.00	,
+						0.56	0.83	0.00	,
+						0.38	0.92	0.00	,
+						0.20	0.98	0.00	,
+						0.00	1.00	0.00	,
+						-0.19	0.98	0.00	,
+						-0.38	0.92	0.00	,
+						-0.55	0.83	0.00	,
+						-0.71	0.71	0.00	,
+						-0.83	0.56	0.00	,
+						-0.92	0.38	0.00	,
+						-0.98	0.20	0.00	,
+						-1.00	0.00	0.00	,
+						-0.98	-0.19	0.00	,
+						-0.92	-0.38	0.00	,
+						-0.83	-0.55	0.00	,
+						-0.71	-0.71	0.00	,
+						-0.56	-0.83	0.00	,
+						-0.38	-0.92	0.00	,
+						-0.20	-0.98	0.00	,
+						0.00	-1.00	0.00	,
+						0.19	-0.98	0.00	,
+						0.38	-0.92	0.00	,
+						0.55	-0.83	0.00	,
+						0.71	-0.71	0.00	,
+						0.83	-0.56	0.00	,
+						0.92	-0.39	0.00	,
+						0.98	-0.20	0.00	,
+						1.00	0.00	0.00	,
+						0.98	0.19	0.00	
+
+						]		 #đường xương sống, luôn luôn vuông góc với mặt crossSection
+				scale	.1 .1		 #chia tỉ lệ tương ứng với các điểm trong spine
+				orientation	[0 0 01 0, 0 0 1 0, 0 0 1 0, 0 0 1 0]
+				endCap TRUE
+				beginCap TRUE
+				solid FALSE
+		}
+}
+	]
+}
+DEF ALLNANHOA Transform {
+	children [
+		DEF NANHOA Transform {
+			children [
+				Shape {
+					appearance Appearance	{
+						material Material {
+							diffuseColor .15 .15 .15
+							specularColor .92 .91 .89
+							ambientIntensity 0
+							shininess .06
+						}
+				
+				
+					}
+					geometry Cylinder {
+						radius 0.01
+						height 1
+					}
+				}
+			]
+			translation	0 0.5 0
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.1
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.2
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.3
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.4
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.5
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.6
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.7
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.8
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 0.9
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.1
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.2
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.3
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.4
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.5
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.6
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.7
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.8
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 1.9
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.1
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.2
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.3
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.4
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.5
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.6
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.7
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.8
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 2.9
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.1
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.2
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.3
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.4
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.5
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.6
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.7
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.8
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 3.9
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.1
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.2
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.3
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.4
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.5
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.6
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.7
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.8
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 4.9
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.1
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.2
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.3
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.4
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.5
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.6
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.7
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.8
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 5.9
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6.1
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6.2
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6.3
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6.4
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6.5
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6.6
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6.7
+		}
+		Transform {
+			children [
+				USE	NANHOA
+			]
+			rotation 0 0 1 6.8
+		}
+		
+	]
+	
+} 
+Transform {
+	children [
+		DEF BANHPHAI Transform {
+			children [
+				USE	BANHXE
+				USE	ALLNANHOA
+			]
+			translation	4 0 0
+		}
+		DEF oi OrientationInterpolator {
+			key [ 0 0.5 1 ]
+			keyValue [	0 0 1 0,
+						0 0 1 -3.14, # rotate right
+						0 0 1 -6.28] # rotate down
+		}
+		
+		DEF ts TimeSensor {
+			cycleInterval 2
+			loop TRUE
+		}
+	]
+
+}
+
+Transform {
+	children [
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 1.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 1.57
+			translation	0.7 0 0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 1.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 -0.7
+			translation	0.4 0.6 0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 1.3
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 0.4
+			translation	1.2 0.6 0
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 2.75
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 -0.75
+			translation	2.4 0.95 0
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 2.65
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 1.9
+			translation	2.15 1.7 0
+		}Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 2.1
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 0.3
+			translation	3.7 1 0.2
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 1.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 1.57
+			translation	0.7 0 -0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 1.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 -0.7
+			translation	0.4 0.6 -0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 2.1
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 0.3
+			translation	3.7 1 -0.2
+		}
+
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	0.9 1.2 0
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	0.9 1.2 0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	0.9 1.2 -0.2
+		}
+
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	3.4 2.1 0
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	3.4 2.1 -0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	3.4 2.1 0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	1.5 0 0
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	1.5 0 0.23
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	1.5 0 -0.23
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	4 0 0
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	0 0 0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	0 0 -0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	4 0 0.2
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Sphere {
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	4 0 -0.2
+		}
+
+
+
+	  Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 2
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 1 0 0 1.57
+			translation	3.2 2.8 0
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.7
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 1.7
+			translation	2.9 2.755 0.95
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.7
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 1.7
+			translation	2.9 2.755 -0.95
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.8
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 0.3
+			translation	 3.3 2.3 0
+			
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.5
+						  radius 0.1
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			rotation 0 0 1 0.3
+			translation	 .9 1.4 0
+			
+		}
+		Transform {
+			children [
+				Transform {
+					children [
+						DEF LA Shape {
+							geometry IndexedFaceSet	{
+								coord Coordinate{
+									point [
+										0 -0.5 0, 0.9 0 0, 0 0.5 0, 
+										0 -0.5 0.1, 0.9 0 0.1, 0 0.5 0.1,
+										 ]
+								}
+								coordIndex [0,1,2,0,-1,0,3,4,1,0,-1,0,3,5,2,0,-1,2,1,4,5,2,-1,3,4,5,3]
+								solid FALSE
+
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor .33 .3 .28
+									  specularColor .31 .25 .13
+									  ambientIntensity .687
+									  shininess .1
+								}
+							}
+						}
+						
+					]
+					rotation 1 0 0 -1.54
+					translation	0.7 1.4 0
+				}
+
+			]
+			rotation 0 0 1 0.2
+		}
+
+
+
+
+
+		Transform {
+			children [
+				Transform {
+					children [
+						Shape {
+
+							  geometry Cylinder	{
+								  height 0.8
+								  radius 0.1
+							  }
+							  appearance Appearance {
+								  material Material {
+									  diffuseColor .33 .3 .28
+									  specularColor .31 .25 .13
+									  ambientIntensity .687
+									  shininess .1
+								  }
+							  }
+						}
+
+					]
+					translation 1.5 0 0
+					
+				}
+
+			]
+			rotation 1 0  0 1.54
+			
+			
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.7
+						  radius 0.08
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			translation	 1.5 -0.4 0.3
+			
+			
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Cylinder	{
+						  height 0.7
+						  radius 0.08
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			translation	 1.5 0.4 -0.3
+			
+			
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Box {
+						  size 0.3 .08 .5
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			translation	 1.5 -0.8 0.5
+			
+			
+		}
+		Transform {
+			children [
+				Shape {
+
+					  geometry Box {
+						  size 0.3 .08 .5
+					  }
+					  appearance Appearance {
+						  material Material {
+							  diffuseColor .33 .3 .28
+							  specularColor .31 .25 .13
+							  ambientIntensity .687
+							  shininess .1
+						  }
+					  }
+				}
+			]
+			translation	 1.5 0.8 -0.5
+			
+			
+		}
+	]
+}
+

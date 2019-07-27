@@ -1062,7 +1062,7 @@ Transform {
 	]
 }
 Transform {
-	translation	0 -1 9
+	translation	0 -.8 9.5
 	scale .35 .35 .35
 	children [
 		Transform {
@@ -1087,7 +1087,65 @@ Transform {
 			]
 		}
 	]
-}		
+}
+Transform {
+	translation	18 -2 11
+	scale .022 .022 .022
+	children [
+		Transform {
+			rotation 0 1 0 -1.57
+			children [
+				Inline {
+					url	"xeMay.wrl"
+				}
+			]
+		}
+	]
+}
+Transform {
+	translation	16 -2 11
+	scale .022 .022 .022
+	children [
+		Transform {
+			rotation 0 1 0 -1.57
+			children [
+				Inline {
+					url	"xeMay.wrl"
+				}
+			]
+		}
+	]
+}
+Transform {
+	translation	22 -1.3 12
+	scale .5 .5 .5
+	children [
+		Transform {
+			rotation 0 1 0 1.57
+			children [
+				Inline {
+					url	"xeDap.wrl"
+				}
+			]
+		}
+	]
+}
+Transform {
+	translation	24 -1.3 12
+	scale .5 .5 .5
+	children [
+		Transform {
+			rotation 0 1 0 1.57
+			children [
+				Inline {
+					url	"xeDap.wrl"
+				}
+			]
+		}
+	]
+}	
+	
+	
 Transform {
 			 children [	
 				Viewpoint {
